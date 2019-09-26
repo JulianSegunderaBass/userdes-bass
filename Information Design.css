@@ -1,0 +1,277 @@
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-family: "Luna";
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+#SwayLink:hover {
+  background-color: #0a8a52;
+  color: white;
+}
+
+#GitLink:hover {
+	background-color: #000642;
+	color: white;
+}
+
+header {
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 30vw 0 5vw;
+	position: relative;
+	transform-style: inherit;
+	width: 100vw;
+	color: black;
+
+}
+
+header h1 {
+	margin-top: -250px;
+	background-color: rgba(255, 180, 51, 0.8);
+	width: 50%;
+}
+
+header p {
+	background-color: rgb(222, 144, 9, 0.8);
+	color: black;
+	width: 50%;
+}
+
+header ul {
+	position: fixed;
+	padding: 0 0 0;
+}
+
+header, header:before {
+	background: 50% 50% / cover;
+}
+
+header::before {
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	background-image: url("https://store-images.s-microsoft.com/image/apps.9072.14000697169355955.46e3090f-b2a3-4afa-ad0d-d63853efdc69.5d71adad-4b84-49fa-8d4d-dc4f360b136a?mode=scale&q=90&h=1080&w=1920");
+	background-size: cover;
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+	min-height: 100vh;
+}
+
+header * {
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin: 0;
+	padding: 1em 0;
+}
+
+.content {
+	box-sizing: border-box;
+	min-height: 10vh;
+	padding: 0 0 32vh;
+	position: relative;
+	transform-style: inherit;
+	width: 99vw;
+	background-color: #4f1204;
+}
+
+/*.content::before {
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	background-size: cover;
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+	min-height: 100vh;
+}*/
+
+.content * {
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	/*text-align: center;*/
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 1em 0;
+}
+
+
+
+.floatingText {
+	float: left;
+}
+
+#Panel {
+	height: 25%;
+	width: 25%;
+	float: left;
+	padding-right: 1px;
+}
+
+.Confirm {
+	height: 25%;
+	width: 25%;
+	float: right;
+	padding-left: 1px;
+}
+
+#Layout {
+	height: 25%;
+	width: 25%;
+	float: left;
+	padding-right: 1px;
+}
+
+.list {
+	text-align: center;
+}
+
+#git {
+	height: 200px;
+	width: 200px;
+}
+
+#roku {
+	height: 200px;
+	width: 200px;
+}
+
+#original {
+	float: left;
+	height: 300px;
+	width: 500px;
+}
+
+#updated {
+	float: right;
+	height: 700px;
+	width: 400px;
+}
+
+.original {
+	position: relative;
+	height: 300px;
+	width: 500px;
+	margin-right: 15px;
+	background-image: url("A7_Original.png");
+	background-size: cover;
+	float: left;
+  }
+ 
+ .original .originalText {
+	 position: absolute; 
+	 top: 89.5%; 
+	 bottom: 0;
+	 background: rgba(61, 61, 61, 1);
+	 color: white;
+	 font-family: Arial;
+	 font-size: 10px; 
+	 padding: 0px;
+	 margin: 0px;
+  }
+
+  .updated {
+	position: relative;
+	height: 750px;
+	width: 550px;
+	margin-right: 15px;
+	background-image: url("Invite\ Sample.png");
+	background-size: cover;
+	float: right;
+  }
+ 
+ .updated .updatedText {
+	 position: absolute; 
+	 bottom: 95%; 
+	 top:0;
+	 background: rgba(61, 61, 61, 1);
+	 color: white;
+	 font-family: Arial;
+	 font-size: 10px; 
+	 padding: 0px;
+	 margin: 0px;
+  }

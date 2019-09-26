@@ -1,0 +1,295 @@
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-family: "Luna";
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+#GitLink:hover {
+	background-color: #000642;
+	color: white;
+}
+
+#SwayLink:hover {
+  background-color: #0a8a52;
+  color: white;
+}
+
+header {
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 30vw 0 5vw;
+	position: relative;
+	transform-style: inherit;
+	width: 100vw;
+
+}
+
+header h1 {
+	margin-top: -250px;
+	background-color: rgba(15, 15, 15, 0.8);
+	width: 50%;
+}
+
+header p {
+	background-color: rgba(26, 26, 26, 0.8);
+	width: 50%;
+}
+
+header ul {
+	position: fixed;
+	padding: 0 0 0;
+}
+
+header, header:before {
+	background: 50% 50% / cover;
+}
+
+header::before {
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	background-image: url("https://media2.giphy.com/media/x3hyLhvLcixEY/source.gif");
+	background-size: cover;
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+	min-height: 100vh;
+}
+
+header * {
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin: 0;
+	padding: 1em 0;
+}
+
+.content {
+	box-sizing: border-box;
+	min-height: 10vh;
+	padding: 0 0 4vh;
+	position: relative;
+	transform-style: inherit;
+	width: 99vw;
+	background-color: black;
+}
+
+/* .content::before {
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	background-size: cover;
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+	min-height: 100vh;
+} */
+
+.content * {
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	/*text-align: center;*/
+	margin: 0;
+	padding: 1em 0;
+}
+
+.content2 {
+	box-sizing: border-box;
+	min-height: 10vh;
+	padding: 2vw 0 5vw;
+	position: relative;
+	transform-style: inherit;
+	width: 99vw;
+	background-color: #7a1914;
+}
+
+/* .content2::before {
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	background-size: cover;
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+	min-height: 100vh;
+} */
+
+.content2 * {
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 1em 0;
+}
+
+.content3 {
+	box-sizing: border-box;
+	min-height: 10vh;
+	padding: 2vw 0 0;
+	position: relative;
+	transform-style: inherit;
+	width: 99vw;
+	background-color: #0b4200;
+	color: white;
+}
+
+/*.content3::before {
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	background-size: cover;
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+	min-height: 100vh;
+}*/
+
+.content3 * {
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin: 0;
+	padding: 1em 0;
+}
+
+#ProfilePic {
+	height: 350px;
+	width: 270px;
+	padding-right: 5px;
+}
+
+.floatingText {
+	float: left;
+}
+
+/*figure {
+	display:inline-block;
+	float: left;
+}*/
+
+.imageContainer {
+   position: relative;
+   height: 200px;
+   width: 200px;
+   margin-right: 5px;
+   background-image: url("profile pic.jpg");
+   background-size: cover;
+   float: left;
+ }
+
+.imageContainer .imageText {
+	position: absolute;  
+	bottom: 0; 
+	background: rgba(61, 61, 61, 1);
+	font-family: Arial;
+	font-size: 10px; 
+	padding: 0 5px 0 0;
+ }
+
+/*.imageBox{
+	position: relative;
+    display: inline-block; 
+
+}
+.imageBox .imageText{
+    position: absolute;
+    
+    top: 84%; 
+    background: rgba(61, 61, 61, 1);
+    font-family: Arial;
+    font-size: 10px;
+    color: #fff;
+    
+    padding: 0 5px 0 0;
+
+}	 */
