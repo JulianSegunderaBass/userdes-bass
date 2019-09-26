@@ -76,7 +76,7 @@
 
 	<div class = "content5">
 		
-		<img src="Dwayne the student.png" align = "left" id = "Dwayne">
+		<img src="Dwayne the student.PNG" align = "left" id = "Dwayne">
 		<h1 align = "left">Meet Dwayne</h1>
 
 
@@ -90,7 +90,7 @@
 
 	<div class = "content6">
 
-		<img src="Isaac the moderator.png" align = "right" id = "Isaac">		
+		<img src="Isaac the moderator.PNG" align = "right" id = "Isaac">		
 		<h1 align = "right">Meet Isaac</h1>
 
 
@@ -105,7 +105,7 @@
 	<div class = "content7">
 		
 		
-		<img src="Mara from ITRO.png" align = "left" id = "Mara">
+		<img src="Mara from ITRO.PNG" align = "left" id = "Mara">
 		<h1 align = "left">Meet Mara</h1>
 
 
