@@ -9,24 +9,24 @@
 
 
 <div class="navbar">
-  <a href="index.html">About Me</a>
+  <a href="index.php">About Me</a>
   <div class="subnav">
     <button class="subnavbtn">Activities <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="FavoriteApps.html">My Favorite Apps</a>
-      <a href="Elevator.html">1000-floor Elevator</a>
-	  <a href="Information Design.html">Information Design</a>
-	  <a href="NeedFinding.html">Need Finding</a>
-      <a href="RegAndLog.html">Registration and Login Forms</a>
-      <a href="Personas.html">Personas</a>
-      <a href="4by3GridDesign.html" class = "active2">4 by 3 Grids</a>
-      <a href="12Columns.html">12 Column Design</a>
+      <a href="FavoriteApps.php">My Favorite Apps</a>
+      <a href="Elevator.php">1000-floor Elevator</a>
+	  <a href="Information Design.php">Information Design</a>
+	  <a href="NeedFinding.php">Need Finding</a>
+      <a href="RegAndLog.php">Registration and Login Forms</a>
+      <a href="Personas.php">Personas</a>
+      <a href="4by3GridDesign.php" class = "active2">4 by 3 Grids</a>
+      <a href="12Columns.php">12 Column Design</a>
       <a href="https://sway.office.com/knOcFgQXhokKRe5P?ref=Link" id = "SwayLink">My Sample Sway</a>
       <a href="https://github.com/JulianSegunderaBass" id = "GitLink">My Github</a>
     </div>
   </div> 
-  <a href="Reflections.html">Reflections</a> 
-  <a href="Certifications.html">Certifications</a>
+  <a href="Reflections.php">Reflections</a> 
+  <a href="Certifications.php">Certifications</a>
 </div>
 
 	<center>
